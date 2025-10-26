@@ -1,6 +1,15 @@
 package _01_else_if._4_are_you_happy;
 
-public class AreYouHappy {
+import javax.swing.JOptionPane;
 
-		
+public class AreYouHappy {
+	
+	public static void main(String[] args) {
+	
+		String happy = JOptionPane.showInputDialog("Are you happy?");
+		if (happy.equalsIgnoreCase("yes")) {
+			JOptionPane.showMessageDialog(null, "Keep doing whatever you're doing.");
+		}
+	
+	}
 }
