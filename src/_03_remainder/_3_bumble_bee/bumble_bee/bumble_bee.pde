@@ -1,7 +1,7 @@
 
 void setup() {
      ellipseMode(CENTER);
-     size(500, 500);
+     size(515, 515);
      background(160, 160, 160);
      drawFlower(350, 100);
 }
@@ -15,9 +15,15 @@ void draw() {
 (see the image on the recipe, it's a diagonal line of circles)
 Use remainder to make the colors alternate between yellow and black
 */
-
-
-
+for (int x = 0; x <= 435; x+=15) {
+  if (x % 2 == 0) {
+    fill(255,255,0);
+  } else {
+    fill(0,0,0);  
+  }
+   ellipse(25+x,25+x,60,60);
+}
+drawBeeFace(475,475);
 /*
 Now put his head on using drawBeeFace(x,y)
 */
