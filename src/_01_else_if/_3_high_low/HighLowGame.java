@@ -12,7 +12,7 @@ public class HighLowGame {
 		int random = new Random().nextInt(100)+1;
 		
 		// 2. Print out the random variable above
-		System.out.println(random);
+		//    System.out.println(random);
 		// 11. Repeat steps 1 to 10 ten times
 		
 			// 1. Ask the user for a guess using a pop-up window, and save their response 
